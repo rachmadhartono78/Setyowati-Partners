@@ -46,79 +46,94 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-    
+
+    <!-- Hero / Breadcrumbs -->
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread">Contact us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Kontak Kami</h1>
+            <p class="breadcrumbs">
+              <span class="mr-2">
+                <a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a>
+              </span>
+              <span>Kontak <i class="ion-ios-arrow-forward"></i></span>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact Info & Form -->
     <section class="ftco-section contact-section">
       <div class="container">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-12 mb-4">
-            <h2 class="h3">Contact Information</h2>
+            <h2 class="h3">Informasi Kontak</h2>
           </div>
           <div class="w-100"></div>
+
           <div class="col-md-3">
-            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+            <p><span>Alamat:</span> <span>Jl. Contoh Raya No. 123, Yogyakarta 55223, Indonesia</span> <!-- ganti dengan alamat kantor --></p>
           </div>
           <div class="col-md-3">
-            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+            <p><span>Telepon:</span> <a href="tel:+6281234567890">+62 812-3456-7890</a> <!-- ganti dengan nomor aktif --></p>
           </div>
           <div class="col-md-3">
-            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            <p><span>Email:</span> <a href="mailto:info@setyowatipartners.id">info@setyowatipartners.id</a> <!-- ganti dengan email domain --></p>
           </div>
           <div class="col-md-3">
-            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+            <p><span>Website:</span> <a href="#" rel="nofollow">setyowatipartners.id</a> <!-- ganti dengan URL situs --></p>
           </div>
         </div>
+
         <div class="row block-9">
           <div class="col-lg-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form">
+            <form action="#" method="post" class="bg-light p-5 contact-form" novalidate>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <label class="sr-only" for="name">Nama</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Nama Lengkap" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Alamat Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <label class="sr-only" for="subject">Subjek</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subjek">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <label class="sr-only" for="message">Pesan</label>
+                <textarea id="message" name="message" cols="30" rows="7" class="form-control" placeholder="Tulis pesan Anda..." required></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Kirim Pesan" class="btn btn-primary py-3 px-5">
               </div>
             </form>
-          
           </div>
 
           <div class="col-lg-6 d-flex">
-          	<div id="map" class="bg-white"></div>
+            <!-- Map placeholder; inisialisasi via JS sesuai kebutuhan -->
+            <div id="map" class="bg-white" style="width:100%; min-height: 400px;"></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Newsletter -->
     <section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
       <div class="container py-4">
         <div class="row d-flex justify-content-center">
           <div class="col-md-7 ftco-animate d-flex align-items-center">
-            <h2 class="mb-0" style="color:white; font-size: 28px;">Subcribe to our Newsletter</h2>
+            <h2 class="mb-0" style="color:white; font-size: 28px;">Berlangganan Buletin</h2>
           </div>
           <div class="col-md-5 d-flex align-items-center">
-            <form action="#" class="subscribe-form">
+            <form action="#" method="post" class="subscribe-form" novalidate>
               <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" value="Subscribe" class="submit px-3">
+                <label class="sr-only" for="subscribe-email">Email</label>
+                <input type="email" id="subscribe-email" class="form-control" placeholder="Masukkan alamat email" required>
+                <input type="submit" value="Berlangganan" class="submit px-3">
               </div>
             </form>
           </div>
@@ -126,76 +141,83 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
+          <!-- About -->
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About Judge</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Tentang Setyowati &amp; Partners</h2>
+              <p>Kantor hukum yang berkomitmen pada integritas, profesionalisme, dan solusi hukum terpercaya bagi individu maupun korporasi.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#" aria-label="Facebook"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
+
+          <!-- Practice Areas -->
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Practice Areas</h2>
+              <h2 class="ftco-heading-2">Layanan Hukum</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Employment Law</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
-
+                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Litigasi &amp; Penyelesaian Sengketa</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Hukum Bisnis &amp; Korporasi</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Hukum Ketenagakerjaan</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Hukum Properti &amp; Pertanahan</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Hukum Keluarga &amp; Waris</a></li>
               </ul>
             </div>
           </div>
+
+          <!-- Business Hours -->
           <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Business Hours</h2>
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Jam Operasional</h2>
               <div class="opening-hours">
-              	<h4>Opening Days:</h4>
-              	<p class="pl-3">
-              		<span>Monday – Friday : 9am to 20 pm</span>
-              		<span>Saturday : 9am to 17 pm</span>
-              	</p>
-              	<h4>Vacations:</h4>
-              	<p class="pl-3">
-              		<span>All Sunday Days</span>
-              		<span>All Official Holidays</span>
-              	</p>
+                <h4>Hari &amp; Jam:</h4>
+                <p class="pl-3">
+                  <span>Senin – Jumat : 09.00 – 20.00 WIB</span>
+                  <span>Sabtu : 09.00 – 17.00 WIB</span>
+                </p>
+                <h4>Libur:</h4>
+                <p class="pl-3">
+                  <span>Minggu</span>
+                  <span>Hari Libur Nasional</span>
+                </p>
               </div>
             </div>
           </div>
+
+          <!-- Contact -->
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
+              <h2 class="ftco-heading-2">Butuh Bantuan?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">Jl. Contoh Raya No. 123, Yogyakarta 55223</span></li>
+                  <li><a href="tel:+6281234567890"><span class="icon icon-phone"></span><span class="text">+62 812-3456-7890</span></a></li>
+                  <li><a href="mailto:info@setyowatipartners.id"><span class="icon icon-envelope"></span><span class="text">info@setyowatipartners.id</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
+
         </div>
+
         <div class="row">
           <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <p>
+              © <script>document.write(new Date().getFullYear());</script> Setyowati &amp; Partners. All rights reserved.
+              <!-- Jika wajib mencantumkan atribusi template, taruh di sini sesuai lisensi -->
+            </p>
           </div>
         </div>
       </div>
     </footer>
+
     
   
 
